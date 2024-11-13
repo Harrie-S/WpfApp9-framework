@@ -1,0 +1,44 @@
+﻿<Window x:Class="WpfApp9_framework.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp9_framework"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="8"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="8"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="8"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="8"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel VerticalAlignment="Top" Orientation="Vertical" Grid.Row="1" Grid.Column="1">
+            <GroupBox Height="80" >
+                <GroupBox.Header>
+                    <TextBlock Text="Information" Padding="4,0"></TextBlock>
+                </GroupBox.Header>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="Assembly version" VerticalAlignment="Center" Margin="4"></TextBlock>
+                    <TextBlock Name="TextBlock_AssemblyVersion"  Text="Assembly version" Margin="4" Grid.Column="1"></TextBlock>
+                </Grid>
+            </GroupBox>
+            <Border HorizontalAlignment="Left" VerticalAlignment="Center" MaxHeight="100"  Grid.Row="2" Grid.Column="7" Grid.RowSpan="5"  CornerRadius="4" BorderThickness="1"  Margin="1" BorderBrush="Transparent">
+                <!--<Image Name="PreviewPicture" Source="Resources\Images\CadExporter logo and text 240708.3.png"></Image>-->
+            </Border>
+        </StackPanel>
+
+        <Button  Height="24" Width="48">asdf</Button>
+    </Grid>
+</Window>
